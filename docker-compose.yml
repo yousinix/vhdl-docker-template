@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  main:
+    image: ghdl/ext:latest
+    restart: always
+    tty: true
+    working_dir: /project
+    environment:
+      # [LINUX] Remove "=host.docker.internal:0.0"
+      - DISPLAY=host.docker.internal:0.0
+    volumes:
+      - .:/project
+      # [LINUX] Uncomment the following line
+      #- /tmp/.X11-unix:/tmp/.X11-unix

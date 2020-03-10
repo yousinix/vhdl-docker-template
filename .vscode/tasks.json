@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "run-container",
+      "type": "shell",
+      "command": "docker-compose run --rm main python run.py",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "run-container-graphical",
+      "type": "shell",
+      "command": "docker-compose run --rm main python run.py -g",
+      "problemMatcher": [],
+      "group": "build"
+    }
+  ]
+}

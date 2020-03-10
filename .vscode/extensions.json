@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "ms-azuretools.vscode-docker",
+    "puorc.awesome-vhdl",
+    "vinrobot.vhdl-formatter"
+  ]
+}
